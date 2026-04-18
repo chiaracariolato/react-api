@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from "axios";
 import ListaAttori from './components/ListaAttori'
-import ListaAttrici from './components/ListaAttrici';
 
 function App() {
 
@@ -26,11 +25,10 @@ function App() {
   }, [])
 
   return (
-    <div className="container">
-      <ListaAttori attori={attori} />
-      <hr />
-      <ListaAttrici attrici={attrici} />
-    </div>
+
+    < div className="container" >
+      <ListaAttori attori={attori} attrici={attrici} />
+    </div >
 
   )
 }
